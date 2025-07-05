@@ -1,0 +1,17 @@
+{
+  "name": "amanah_cp",
+  "version": "1.0.0",
+  "description": "",
+  "license": "MIT",
+  "author": "PT Jasa Amanah Berkah",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "test": "npm run dev",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "nodemon": "^3.1.10"
+  }
+}
