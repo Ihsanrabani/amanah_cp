@@ -1,5 +1,5 @@
 import '../index.css'
-import Navbar_W from '../components/Navbar_W';
+import Navbar_W from '../components/Navbar_W.jsx';
 import Footer from '../components/Footer';
 import { Link } from 'react-router-dom';
 
