@@ -16,7 +16,7 @@ const Navbar = () => {
         <nav className='flex items-center justify-between bg-[#B0B0B0]/25 backdrop-blur-lg h-20 py-12 px-3 xl:px-8 drop-shadow-lg relative z-10'>
             <img src="/assets/JAB_Logo_W.png" alt="" className='w-auto h-20'/>
 
-            <button onClick={() => { setMenu(!menu) }}><img src="/assets/bars_W.png" alt="" className="xl:hidden"/></button>
+            <button onClick={() => { setMenu(!menu) }}><img src="/assets/bars_W.png" alt="" className="xl:hidden fixed top-6 right-4"/></button>
             <div className='hidden xl:flex text-white montserrat-semibold text-xl gap-8'>
                 <a href="/" className="hover:text-[#FF6F00] duration-300">Home</a>
                 
@@ -34,7 +34,7 @@ const Navbar = () => {
                     <div className="absolute left-0 top-full
                   opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto 
                   transition-all duration-500 z-50">
-                        <div className='flex flex-col bg-[#B0B0B0]/25 backdrop-blur-lg p-3 gap-3 rounded-b-lg duration-500 -translate-y-4    group-hover:translate-y-[34px]'>
+                        <div className='flex flex-col bg-[#B0B0B0]/25 backdrop-blur-lg p-3 gap-3 rounded-b-lg duration-500 -translate-y-4 group-hover:translate-y-[34px]'>
                             <Link to="/service" className="hover:text-[#FF6F00] duration-200">Our Service</Link>
                             <Link to="/service/legalitas" className="hover:text-[#FF6F00] duration-200">Legalitas</Link>
                             <Link to="/service/digitalMarketing" className="hover:text-[#FF6F00] duration-200">Digital Marketing</Link>
@@ -79,12 +79,12 @@ const Navbar = () => {
 
                             <div className='flex items-center gap-2 pl-1 py-1 hover:bg-black/15 rounded'>
                                 <FontAwesomeIcon icon={faHouse} color='black' className='h-5'/>
-                                <a href="/" className="duration-300 text-base">Home</a>
+                                <a href="/" className="duration-300 text-base montserrat-semibold">Home</a>
                             </div>
 
                             <div className='flex items-center gap-2 pl-1 py-1 hover:bg-black/15 rounded'>
                                 <FontAwesomeIcon icon={faGear} color='black' className='h-5' />
-                                <a className="duration-300 text-base" onClick={() => {
+                                <a className="duration-300 text-base montserrat-semibold" onClick={() => {
                                     if(!dropdown) {
                                         setDropdown(true)
                                     } else if(dropdown) {
@@ -94,15 +94,15 @@ const Navbar = () => {
                             </div>
                             { dropdown && 
                                 <div className='flex flex-col ml-9'>
-                                    <a href="/service" className='hover:bg-black/15 rounded pl-1 text-base py-1'>Our Service</a>
-                                    <a href="/service/legalitas" className='hover:bg-black/15 rounded pl-1 text-base py-1'>Legalitas</a>
-                                    <a href="/service/digitalMarketing" className='hover:bg-black/15 rounded pl-1 text-base py-1'>Digital Marketing</a>
+                                    <a href="/service" className='hover:bg-black/15 rounded pl-1 text-base py-1 montserrat-semibold'>Our Service</a>
+                                    <a href="/service/legalitas" className='hover:bg-black/15 rounded pl-1 text-base py-1 montserrat-semibold'>Legalitas</a>
+                                    <a href="/service/digitalMarketing" className='hover:bg-black/15 rounded pl-1 text-base py-1 montserrat-semibold'>Digital Marketing</a>
                                 </div>
                             }
 
                             <div className='flex items-center gap-2 pl-1 py-1 hover:bg-black/15 rounded'>
                                 <FontAwesomeIcon icon={faTag} color='black' className='h-5' />
-                                <a className="duration-300 text-base" onClick={() => {
+                                <a className="duration-300 text-base montserrat-semibold" onClick={() => {
                                     if(!dropdown2) {
                                         setDropdown2(true)
                                     } else if(dropdown2) {
@@ -112,18 +112,18 @@ const Navbar = () => {
                             </div>
                             { dropdown2 && 
                                 <div className='flex flex-col ml-9'>
-                                    <a href="/pricing/legalitas" className='hover:bg-black/15 rounded text-base pl-1 py-1'>Legalitas</a>
-                                    <a href="/pricing/digitalMarketing" className='hover:bg-black/15 rounded text-base pl-1 py-1'>Digital Marketing</a>
+                                    <a href="/pricing/legalitas" className='hover:bg-black/15 rounded text-base pl-1 py-1 montserrat-semibold'>Legalitas</a>
+                                    <a href="/pricing/digitalMarketing" className='hover:bg-black/15 rounded text-base pl-1 py-1 montserrat-semibold'>Digital Marketing</a>
                                 </div>
                             }
 
                             <div className='flex items-center gap-2 pl-1 py-1 hover:bg-black/15 rounded'>
                                 <FontAwesomeIcon icon={faCircleInfo} color='black' className='h-5' />
-                                <a href="/aboutUs" className="duration-300 text-base">About Us</a>
+                                <a href="/aboutUs" className="duration-300 text-base montserrat-semibold">About Us</a>
                             </div>
                             <div className='flex items-center gap-2 pl-1 py-1 hover:bg-black/15 rounded'>
                                 <FontAwesomeIcon icon={faPhone} color='black' className='h-5' />
-                                <a href="/contactUs" className="duration-300 text-base">Contact Us</a>
+                                <a href="/contactUs" className="duration-300 text-base montserrat-semibold">Contact Us</a>
                             </div>
                         </div>
                     </div>

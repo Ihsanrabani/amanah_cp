@@ -87,7 +87,7 @@ const Home = () => {
                 </div>
 
                 {/* SERVICE */}
-                <div className='z-0 absolute xl:-bottom-36 left-1/2 -translate-x-1/2 bg-white px-6 py-5 shadow-2xl rounded-xl w-[90%] max-w-md xl:max-w-xl xl:w-[90%]'>   
+                <div className='z-0 absolute xl:-bottom-36 bottom-1 left-1/2 -translate-x-1/2 bg-white px-6 py-5 shadow-2xl rounded-xl w-[90%] max-w-md xl:max-w-xl xl:w-[90%]'>   
                     <div className='text-center'>
                         <h1 className='montserrat-semibold text-[#FF6F00] text-4xl'>SERVICES</h1>
                     </div>  
@@ -115,7 +115,7 @@ const Home = () => {
                     <div data-aos="fade-up" className='flex flex-col items-center gap-5 bg-white shadow-1 p-5 min-w-72 rounded-lg'>
                         <img src="/assets/ilustras/gear_Ilus.png" alt="" className=''/>
                         <div className='flex flex-col justify-center items-center h-full'>
-                            <h1 className='montserrat-semibold text-5xl'>1000+</h1>
+                            <h1 className='montserrat-semibold text-3xl'>1000+</h1>
                             <h1 className='montserrat-regular text-3xl'>Projek</h1>
                         </div>
                     </div>
@@ -123,7 +123,7 @@ const Home = () => {
                     <div data-aos="fade-up" className='flex flex-col items-center gap-5 bg-white shadow-1 p-5 min-w-72 rounded-lg'>
                         <img src="/assets/ilustras/star_Ilus.png" alt="" className='w-32'/>
                         <div className='flex flex-col justify-center items-center h-full'>
-                            <h1 className='montserrat-semibold text-5xl'>5 Tahun</h1>
+                            <h1 className='montserrat-semibold text-3xl'>5 Tahun</h1>
                             <h1 className='montserrat-regular text-3xl'>Pengalaman</h1>
                         </div>
                     </div>
@@ -131,16 +131,16 @@ const Home = () => {
                     <div data-aos="fade-up" className='flex flex-col items-center gap-5 bg-white shadow-1 p-5 min-w-72 rounded-lg'>
                         <img src="/assets/ilustras/headset_Ilus.png" alt="" className='w-32'/>
                         <div className='flex flex-col justify-center items-center h-full'>
-                            <h1 className='montserrat-semibold text-5xl'>24/7</h1>
+                            <h1 className='montserrat-semibold text-3xl'>24/7</h1>
                             <h1 className='montserrat-regular text-3xl'>Bantuan</h1>
                         </div>
                     </div>
 
                     <div data-aos="fade-up" className='flex flex-col items-center gap-5 bg-white shadow-1 p-5 min-w-72 rounded-lg'>
-                        <img src="/assets/ilustras/client_Ilus.png" alt="" className='w-32'/>
+                        <img src="/assets/ilustras/handshake_Ilus.png" alt="" className='w-40'/>
                         <div className='flex flex-col justify-center items-center h-full'>
-                            <h1 className='montserrat-semibold text-5xl'>???%</h1>
-                            <h1 className='montserrat-regular text-3xl'>Kepuasana Klien</h1>
+                            <h1 className='montserrat-semibold text-3xl'>100%</h1>
+                            <h1 className='montserrat-regular text-3xl'>Komitmen</h1>
                         </div>
                     </div>
 
