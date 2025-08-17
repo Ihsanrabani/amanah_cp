@@ -1,5 +1,5 @@
 import '../index.css'
-import Navbar_W from '../components/Navbar_w'
+import Navbar_W from '../components/Navbar_W'
 import Footer from '../components/Footer'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBoltLightning, faUserTie, faRegistered, faTag, faCheck } from '@fortawesome/free-solid-svg-icons';

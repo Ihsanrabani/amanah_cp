@@ -1,6 +1,5 @@
 import '../index.css'
-import Navbar_W from '../components/Navbar_w'
-import PricingC_W from '../components/PricingC_W'
+import Navbar_W from '../components/Navbar_W'
 import Footer from '../components/Footer'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBoltLightning, faUserTie, faRegistered, faTag, faCheck, faXmark } from '@fortawesome/free-solid-svg-icons';
