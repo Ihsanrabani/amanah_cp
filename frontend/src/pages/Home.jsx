@@ -72,7 +72,7 @@ const Home = () => {
         <>  
             <ToastContainer/>
             {/* HERO SECTION */}
-            <section className="relative h-screen bg-[url('/assets/HeroBG_M2.png')] md:bg-[url('/assets/HeroBG_D.png')] xl:shadow-2xl bg-center">
+            <section className="relative bg-black h-screen bg-[url('/assets/HeroBG_M2.png')] md:bg-[url('/assets/HeroBG_D.png')] xl:shadow-2xl bg-center">
                 <Navbar />
 
                 <div className='flex flex-col gap-16 mt-32 xl:mt-52'>
@@ -81,24 +81,24 @@ const Home = () => {
                         <p className='text-center montserrat-regular xl:text-lg'>Aman, cepat, dan terpercaya bersama tim profesional kami.</p>
                     </div>
                     <div className='flex gap-3 justify-center'>
-                        <button className='p-2 xl:p-3 rounded-md bg-[#FF6F00] text-white montserrat-bold text-xl'>Konsultasi Sekarang</button>
-                        <button className='p-2 xl:p-3 rounded-md bg-[#FF6F00] text-white montserrat-bold text-xl'>Lihat Layanan Kami</button>
+                        <button className='p-2 xl:p-3 rounded-md bg-[#FF6F00] text-white montserrat-bold'>Konsultasi Sekarang</button>
+                        <button className='p-2 xl:p-3 rounded-md bg-[#FF6F00] text-white montserrat-bold'>Lihat Layanan Kami</button>
                     </div>
                 </div>
 
                 {/* SERVICE */}
-                <div className='z-0 absolute bottom-5 xl:-bottom-36 left-1/2 -translate-x-1/2 bg-white px-6 py-5 shadow-2xl rounded-xl w-[90%] max-w-md xl:max-w-xl xl:w-[90%]'>   
+                <div className='z-0 absolute xl:-bottom-36 left-1/2 -translate-x-1/2 bg-white px-6 py-5 shadow-2xl rounded-xl w-[90%] max-w-md xl:max-w-xl xl:w-[90%]'>   
                     <div className='text-center'>
                         <h1 className='montserrat-semibold text-[#FF6F00] text-4xl'>SERVICES</h1>
                     </div>  
                     <div className='flex gap-8 xl:gap-20 justify-center pt-4'>
-                        <div className='bg-white rounded-lg shadow-1 w-max p-8 text-center'>
+                        <div className='bg-white rounded-lg shadow-1 w-max p-4 text-center'>
                             <div className='p-5 xl:p-6 shadow-xl rounded-full'>
                                 <img src="/assets/ilustras/Book_Gavel.png" alt="" className='xl:w-20 w-44'/>
                             </div>
                             <h1 className='text-xl xl:text-3xl montserrat-bold pt-2'>Legalitas</h1>
                         </div>
-                        <div className='bg-white rounded-lg shadow-1 w-max p-8 text-center '>
+                        <div className='bg-white rounded-lg shadow-1 w-max p-4 text-center '>
                             <div className='flex justify-center p-5 xl:p-6 shadow-xl rounded-full'>
                                 <img src="/assets/ilustras/digitalMarketing_Ilus.png" alt="" className='xl:w-20 w-44'/>
                             </div>
@@ -112,7 +112,7 @@ const Home = () => {
             <section className='flex justify-center bg-white mt-20 xl:mt-56'>
                 <div className='flex flex-col xl:flex-row gap-16'>
                     
-                    <div data-aos="fade-up" className='flex flex-col gap-5 bg-white shadow-1 p-5 min-w-72 rounded-lg'>
+                    <div data-aos="fade-up" className='flex flex-col items-center gap-5 bg-white shadow-1 p-5 min-w-72 rounded-lg'>
                         <img src="/assets/ilustras/gear_Ilus.png" alt="" className=''/>
                         <div className='flex flex-col justify-center items-center h-full'>
                             <h1 className='montserrat-semibold text-5xl'>1000+</h1>
@@ -121,7 +121,7 @@ const Home = () => {
                     </div>
 
                     <div data-aos="fade-up" className='flex flex-col items-center gap-5 bg-white shadow-1 p-5 min-w-72 rounded-lg'>
-                        <img src="/assets/ilustras/star_Ilus.png" alt="" className='w-52'/>
+                        <img src="/assets/ilustras/star_Ilus.png" alt="" className='w-32'/>
                         <div className='flex flex-col justify-center items-center h-full'>
                             <h1 className='montserrat-semibold text-5xl'>5 Tahun</h1>
                             <h1 className='montserrat-regular text-3xl'>Pengalaman</h1>
@@ -129,7 +129,7 @@ const Home = () => {
                     </div>
 
                     <div data-aos="fade-up" className='flex flex-col items-center gap-5 bg-white shadow-1 p-5 min-w-72 rounded-lg'>
-                        <img src="/assets/ilustras/headset_Ilus.png" alt="" className='w-52'/>
+                        <img src="/assets/ilustras/headset_Ilus.png" alt="" className='w-32'/>
                         <div className='flex flex-col justify-center items-center h-full'>
                             <h1 className='montserrat-semibold text-5xl'>24/7</h1>
                             <h1 className='montserrat-regular text-3xl'>Bantuan</h1>
@@ -137,7 +137,7 @@ const Home = () => {
                     </div>
 
                     <div data-aos="fade-up" className='flex flex-col items-center gap-5 bg-white shadow-1 p-5 min-w-72 rounded-lg'>
-                        <img src="/assets/ilustras/client_Ilus.png" alt="" className='w-52'/>
+                        <img src="/assets/ilustras/client_Ilus.png" alt="" className='w-32'/>
                         <div className='flex flex-col justify-center items-center h-full'>
                             <h1 className='montserrat-semibold text-5xl'>???%</h1>
                             <h1 className='montserrat-regular text-3xl'>Kepuasana Klien</h1>
@@ -152,21 +152,21 @@ const Home = () => {
 
                 <h1 className='text-5xl montserrat-bold text-[#FF6F00] text-center mb-10'>Klien Kami</h1>
                 <div data-aos="fade-up">
-                    <Marquee speed={150} autoFill>
+                    <Marquee speed={100} autoFill>
                         <div className='px-10'>
-                            <img src="/assets/logo/1.jpg" alt="" className='w-72 shadow-xl'/>
+                            <img src="/assets/logo/1.jpg" alt="" className='w-36 xl:w-72 shadow-xl'/>
                         </div>
                         <div className='px-10'>
-                            <img src="/assets/logo/2.jpg" alt="" className='w-72 shadow-xl'/>
+                            <img src="/assets/logo/2.jpg" alt="" className='w-36 xl:w-72 shadow-xl'/>
                         </div>
                         <div className='px-10'>
-                            <img src="/assets/logo/3.jpg" alt="" className='w-72 shadow-xl'/>
+                            <img src="/assets/logo/3.jpg" alt="" className='w-36 xl:w-72 shadow-xl'/>
                         </div>
                         <div className='px-10'>
-                            <img src="/assets/logo/4.jpg" alt="" className='w-72 shadow-xl'/>
+                            <img src="/assets/logo/4.jpg" alt="" className='w-36 xl:w-72 shadow-xl'/>
                         </div>
                         <div className='px-10'>
-                            <img src="/assets/logo/5.jpg" alt="" className='w-72 shadow-xl'/>
+                            <img src="/assets/logo/5.jpg" alt="" className='w-36 xl:w-72 shadow-xl'/>
                         </div>
                     </Marquee>
                 </div>

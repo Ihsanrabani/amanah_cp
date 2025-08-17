@@ -70,21 +70,21 @@ const Navbar = () => {
             {menu &&
                 <div className='flex'>
                     <button onClick={() => setMenu(!menu)} className='fixed bg-black/40 h-screen top-0 bottom-0 left-0 right-0'></button>
-                    <div className='fixed flex flex-col bg-white top-0 right-0 h-screen w-64 z-50'>
-                        <div className='py-2 flex justify-center border border-b-1 mb-5'>
+                    <div className='fixed flex flex-col bg-white top-0 left-0 h-screen w-56 z-50'>
+                        <div className='py-2 flex justify-center items-center border border-b-1 mb-5 pr-3'>
                             <img src="/assets/JAB_Logo.png" alt="" className='w-48' />
                         </div>
 
-                        <div className='flex flex-col text-2xl gap-4 montserrat-bold pl-2'>
+                        <div className='flex flex-col text-2xl gap-2 montserrat-bold pl-2'>
 
                             <div className='flex items-center gap-2 pl-1 py-1 hover:bg-black/15 rounded'>
-                                <FontAwesomeIcon icon={faHouse} color='black' className='h-6'/>
-                                <a href="/" className="duration-300">Home</a>
+                                <FontAwesomeIcon icon={faHouse} color='black' className='h-5'/>
+                                <a href="/" className="duration-300 text-base">Home</a>
                             </div>
 
                             <div className='flex items-center gap-2 pl-1 py-1 hover:bg-black/15 rounded'>
-                                <FontAwesomeIcon icon={faGear} color='black' className='h-6' />
-                                <a className="duration-300" onClick={() => {
+                                <FontAwesomeIcon icon={faGear} color='black' className='h-5' />
+                                <a className="duration-300 text-base" onClick={() => {
                                     if(!dropdown) {
                                         setDropdown(true)
                                     } else if(dropdown) {
@@ -93,16 +93,16 @@ const Navbar = () => {
                                 }}>Service</a>
                             </div>
                             { dropdown && 
-                                <div className='flex flex-col gap-3 ml-9'>
-                                    <a href="/service" className='hover:bg-black/15 rounded pl-1 py-1'>Our Service</a>
-                                    <a href="/service/legalitas" className='hover:bg-black/15 rounded pl-1 py-1'>Legalitas</a>
-                                    <a href="/service/digitalMarketing" className='hover:bg-black/15 rounded pl-1 py-1'>Digital Marketing</a>
+                                <div className='flex flex-col ml-9'>
+                                    <a href="/service" className='hover:bg-black/15 rounded pl-1 text-base py-1'>Our Service</a>
+                                    <a href="/service/legalitas" className='hover:bg-black/15 rounded pl-1 text-base py-1'>Legalitas</a>
+                                    <a href="/service/digitalMarketing" className='hover:bg-black/15 rounded pl-1 text-base py-1'>Digital Marketing</a>
                                 </div>
                             }
 
                             <div className='flex items-center gap-2 pl-1 py-1 hover:bg-black/15 rounded'>
-                                <FontAwesomeIcon icon={faTag} color='black' className='h-6' />
-                                <a className="duration-300" onClick={() => {
+                                <FontAwesomeIcon icon={faTag} color='black' className='h-5' />
+                                <a className="duration-300 text-base" onClick={() => {
                                     if(!dropdown2) {
                                         setDropdown2(true)
                                     } else if(dropdown2) {
@@ -111,19 +111,19 @@ const Navbar = () => {
                                 }}>Pricing</a>
                             </div>
                             { dropdown2 && 
-                                <div className='flex flex-col gap-3 ml-9'>
-                                    <a href="/pricing/legalitas" className='hover:bg-black/15 rounded pl-1 py-1'>Legalitas</a>
-                                    <a href="/pricing/digitalMarketing" className='hover:bg-black/15 rounded pl-1 py-1'>Digital Marketing</a>
+                                <div className='flex flex-col ml-9'>
+                                    <a href="/pricing/legalitas" className='hover:bg-black/15 rounded text-base pl-1 py-1'>Legalitas</a>
+                                    <a href="/pricing/digitalMarketing" className='hover:bg-black/15 rounded text-base pl-1 py-1'>Digital Marketing</a>
                                 </div>
                             }
 
                             <div className='flex items-center gap-2 pl-1 py-1 hover:bg-black/15 rounded'>
-                                <FontAwesomeIcon icon={faCircleInfo} color='black' className='h-6' />
-                                <a href="/aboutUs" className="duration-300">About Us</a>
+                                <FontAwesomeIcon icon={faCircleInfo} color='black' className='h-5' />
+                                <a href="/aboutUs" className="duration-300 text-base">About Us</a>
                             </div>
                             <div className='flex items-center gap-2 pl-1 py-1 hover:bg-black/15 rounded'>
-                                <FontAwesomeIcon icon={faPhone} color='black' className='h-6' />
-                                <a href="/contactUs" className="duration-300">Contact Us</a>
+                                <FontAwesomeIcon icon={faPhone} color='black' className='h-5' />
+                                <a href="/contactUs" className="duration-300 text-base">Contact Us</a>
                             </div>
                         </div>
                     </div>
