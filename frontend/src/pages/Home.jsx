@@ -1,6 +1,5 @@
 import '../index.css'
 import Navbar from '../components/Navbar';
-import PricingC from '../components/PricingC';
 import Marquee from 'react-fast-marquee';
 import Footer from '../components/Footer';
 import { ToastContainer, toast } from 'react-toastify';
