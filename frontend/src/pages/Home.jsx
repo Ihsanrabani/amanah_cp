@@ -1,5 +1,5 @@
 import '../index.css'
-import Navbar from '../components/Navbar';
+import Navbar_B from '../components/Navbar_B';
 import Marquee from 'react-fast-marquee';
 import Footer from '../components/Footer';
 import { ToastContainer, toast } from 'react-toastify';
@@ -72,7 +72,7 @@ const Home = () => {
         <>  
             <ToastContainer/>
             {/* HERO SECTION */}
-            <section className="relative bg-black h-screen bg-[url('/assets/HeroBG_M2.png')] md:bg-[url('/assets/HeroBG_D.png')] xl:shadow-2xl bg-center">
+            {/* <section className="relative bg-black h-screen bg-[url('/assets/HeroBG_M2.png')] md:bg-[url('/assets/HeroBG_D.png')] xl:shadow-2xl bg-center">
                 <Navbar />
 
                 <div className='flex flex-col gap-16 mt-32 xl:mt-52'>
@@ -86,20 +86,62 @@ const Home = () => {
                     </div>
                 </div>
 
-                {/* SERVICE */}
                 <div className='z-0 absolute xl:-bottom-36 bottom-1 left-1/2 -translate-x-1/2 bg-white px-6 py-5 shadow-2xl rounded-xl w-[90%] max-w-md xl:max-w-xl xl:w-[90%]'>   
                     <div className='text-center'>
                         <h1 className='montserrat-semibold text-[#FF6F00] text-4xl'>SERVICES</h1>
                     </div>  
                     <div className='flex gap-8 xl:gap-20 justify-center pt-4'>
                         <div className='bg-white rounded-lg shadow-1 w-max p-4 text-center'>
-                            <div className='p-5 xl:p-6 shadow-xl rounded-full'>
+                            <div className='flex justify-center xl:p-6 rounded-full'>
                                 <img src="/assets/ilustras/Book_Gavel.png" alt="" className='xl:w-20 w-44'/>
                             </div>
                             <h1 className='text-xl xl:text-3xl montserrat-bold pt-2'>Legalitas</h1>
                         </div>
                         <div className='bg-white rounded-lg shadow-1 w-max p-4 text-center '>
-                            <div className='flex justify-center p-5 xl:p-6 shadow-xl rounded-full'>
+                            <div className='flex justify-center xl:p-6 rounded-full'>
+                                <img src="/assets/ilustras/digitalMarketing_Ilus.png" alt="" className='xl:w-20 w-44'/>
+                            </div>
+                            <h1 className='text-xl xl:text-3xl montserrat-bold'>Digital <br /> Marketing</h1>
+                        </div>
+                    </div>
+                </div>
+            </section> */}
+
+            {/* HERO SECTION */}
+            <section className="relative h-screen bg-[url('/assets/Hero_BG.png')] bg-center">
+                <Navbar_B/>
+
+                <div className='flex flex-col mt-5 xl:flex-row items-center justify-center'>
+                    <div className=' xl:w-2/4 flex flex-col gap-6 xl:gap-16  xl:pl-40'>
+                        <div className='flex flex-col text-center xl:text-left text-black'>
+                            <h1 className='montserrat-Black text-3xl xl:text-5xl font-bold xl:pr-52'>Solusi Tepat untuk Kebutuhan <span className='text-[#FF6F00]'>Bisnis</span> Anda</h1>
+                            <p className='montserrat-semibold xl:text-lg mt-2'>Aman, cepat, dan terpercaya bersama tim profesional kami.</p>
+                        </div>
+                        <div className='flex gap-3 xl:justify-start justify-center'>
+                            <a href="https://wa.me/6281323244573?text=Halo kak, saya ingin berkonsultasi!" target="_blank" className='bg-[#FF6F00] rounded-md text-white montserrat-bold p-2 xl:p-3 '>Konsultasi Sekarang</a>
+                            <a href="" target="_blank" className='bg-[#FF6F00] rounded-md text-white montserrat-bold p-2 xl:p-3 '>Lihat Layanan Kami</a>
+                            {/* <button className='p-2 xl:p-3 rounded-md bg-[#FF6F00] text-white montserrat-bold'>Lihat Layanan Kami</button> */}
+                        </div>
+                    </div>
+                    <div className='flex justify-center items-center xl:w-2/4'>
+                        <img src="/assets/JAB_Blob.png" alt="" className='w-[650px]'/>
+                    </div>
+                </div>
+
+                {/* SERVICE */}
+                <div className='z-0 absolute xl:-bottom-36 -bottom-10 left-1/2 -translate-x-1/2 bg-white px-6 py-5 shadow-1 rounded-xl w-[90%] max-w-md xl:max-w-xl xl:w-[90%]'>   
+                    <div className='text-center'>
+                        <h1 className='montserrat-semibold text-[#FF6F00] text-4xl'>SERVICES</h1>
+                    </div>  
+                    <div className='flex gap-8 xl:gap-20 justify-center pt-4'>
+                        <div className='bg-white rounded-lg shadow-1 w-max p-4 text-center'>
+                            <div className='flex justify-center xl:p-6 rounded-full'>
+                                <img src="/assets/ilustras/Book_Gavel.png" alt="" className='xl:w-20 w-44'/>
+                            </div>
+                            <h1 className='text-xl xl:text-3xl montserrat-bold pt-2'>Legalitas</h1>
+                        </div>
+                        <div className='bg-white rounded-lg shadow-1 w-max p-4 text-center '>
+                            <div className='flex justify-center xl:p-6 rounded-full'>
                                 <img src="/assets/ilustras/digitalMarketing_Ilus.png" alt="" className='xl:w-20 w-44'/>
                             </div>
                             <h1 className='text-xl xl:text-3xl montserrat-bold'>Digital <br /> Marketing</h1>

@@ -31,13 +31,43 @@ const Navbar_B = () => {
                     </div>
 
                     {/* Dropdown */}
-                    <div className="absolute left-0 top-full
+                    <div className="absolute right-0 top-full
                   opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto 
                   transition-all duration-500 z-50">
-                        <div className='flex flex-col gap-3 rounded-b-lg duration-500 -translate-y-4 group-hover:translate-y-[20px]'>
-                            <Link to="/service" className="hover:text-[#FF6F00] duration-200">Our Service</Link>
-                            <Link to="/service/legalitas" className="hover:text-[#FF6F00] duration-200">Legalitas</Link>
-                            <Link to="/service/digitalMarketing" className="hover:text-[#FF6F00] duration-200">Digital Marketing</Link>
+                        <div className='flex gap-12 text-white bg-[#111827]/85 p-10 rounded-b-xl duration-500 -translate-y-4 group-hover:translate-y-[20px]'>
+                            <div className='w-max'>
+                                <p className='text-white/40 text-md montserrat-regular mb-3'>LEGALITAS</p>
+                                <div className='flex flex-col gap-4'>
+                                    <Link to="/service" className="hover:text-[#FF6F00] duration-200 montserrat-regular">Pendirian PT</Link>
+                                    <Link to="/service" className="hover:text-[#FF6F00] duration-200 montserrat-regular">CV & Firma</Link>
+                                    <Link to="/service" className="hover:text-[#FF6F00] duration-200 montserrat-regular">Yayasan</Link>
+                                    <Link to="/service" className="hover:text-[#FF6F00] duration-200 montserrat-regular">Koperasi</Link>
+                                    <Link to="/service" className="hover:text-[#FF6F00] duration-200 montserrat-regular">Perkumpulan</Link>
+                                    <Link to="/service" className="hover:text-[#FF6F00] duration-200 montserrat-regular">Haki</Link>
+                                </div>
+                            </div>
+
+                            <div className='w-max'>
+                                <p className='text-white/40 text-md montserrat-regular mb-3'>DIGITAL MARKETING</p>
+                                <div className='flex flex-col gap-4'>
+                                    <Link to="/service" className="hover:text-[#FF6F00] duration-200 montserrat-regular">Optimasi Instagram</Link>
+                                    <Link to="/service" className="hover:text-[#FF6F00] duration-200 montserrat-regular">Optimasi Tik Tok</Link>
+                                    <Link to="/service" className="hover:text-[#FF6F00] duration-200 montserrat-regular">SEO & Optimasi Website</Link>
+                                    <Link to="/service" className="hover:text-[#FF6F00] duration-200 montserrat-regular">Optimasi FB ADs</Link>
+                                    <Link to="/service" className="hover:text-[#FF6F00] duration-200 montserrat-regular">Manajemen Sosial Media</Link>
+                                </div>
+                            </div>
+
+                            <div className='w-max'>
+                                <p className='text-white/40 text-md montserrat-regular mb-3'>LAYANAN</p>
+                                <div className='flex flex-col gap-4'>
+                                    <Link to="/service" className="hover:text-[#FF6F00] duration-200 montserrat-regular">Kelebihan Kami</Link>
+
+                                </div>
+                            </div>
+
+                            {/* <Link to="/service/legalitas" className="hover:text-[#FF6F00] duration-200">Legalitas</Link>
+                            <Link to="/service/digitalMarketing" className="hover:text-[#FF6F00] duration-200">Digital Marketing</Link> */}
                         </div>
                     </div>
                 </div>
@@ -52,12 +82,36 @@ const Navbar_B = () => {
                     </div>
 
                     {/* Dropdown */}
-                    <div className="absolute left-0 top-full
+                    <div className="absolute right-0 top-full
                   opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto 
                   transition-all duration-500 z-50">
-                        <div className='flex flex-col gap-3 rounded-b-lg duration-500 -translate-y-4 group-hover:translate-y-[20px]'>
+                        {/* <div className='flex flex-col gap-3 rounded-b-lg duration-500 -translate-y-4 group-hover:translate-y-[20px]'>
                             <Link to="/pricing/legalitas" className="hover:text-[#FF6F00] duration-200">Legalitas</Link>
                             <Link to="/pricing/digitalMarketing" className="hover:text-[#FF6F00] duration-200">Digital Marketing</Link>
+                        </div> */}
+                        <div className='flex gap-12 text-white bg-[#111827]/85 p-10 rounded-b-xl duration-500 -translate-y-4 group-hover:translate-y-[20px]'>
+                            <div className='w-max'>
+                                <p className='text-white/40 text-md montserrat-regular mb-3'>LEGALITAS</p>
+                                <div className='flex flex-col gap-4'>
+                                    <Link to="/service" className="hover:text-[#FF6F00] duration-200 montserrat-regular">Pendirian PT</Link>
+                                    <Link to="/service" className="hover:text-[#FF6F00] duration-200 montserrat-regular">CV & Firma</Link>
+                                    <Link to="/service" className="hover:text-[#FF6F00] duration-200 montserrat-regular">Yayasan</Link>
+                                    <Link to="/service" className="hover:text-[#FF6F00] duration-200 montserrat-regular">Koperasi</Link>
+                                    <Link to="/service" className="hover:text-[#FF6F00] duration-200 montserrat-regular">Perkumpulan</Link>
+                                    <Link to="/service" className="hover:text-[#FF6F00] duration-200 montserrat-regular">Haki</Link>
+                                </div>
+                            </div>
+
+                            <div className='w-max'>
+                                <p className='text-white/40 text-md montserrat-regular mb-3'>DIGITAL MARKETING</p>
+                                <div className='flex flex-col gap-4'>
+                                    <Link to="/service" className="hover:text-[#FF6F00] duration-200 montserrat-regular">Optimasi Instagram</Link>
+                                    <Link to="/service" className="hover:text-[#FF6F00] duration-200 montserrat-regular">Optimasi Tik Tok</Link>
+                                    <Link to="/service" className="hover:text-[#FF6F00] duration-200 montserrat-regular">SEO & Optimasi Website</Link>
+                                    <Link to="/service" className="hover:text-[#FF6F00] duration-200 montserrat-regular">Optimasi FB ADs</Link>
+                                    <Link to="/service" className="hover:text-[#FF6F00] duration-200 montserrat-regular">Manajemen Sosial Media</Link>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
